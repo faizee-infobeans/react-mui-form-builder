@@ -1,0 +1,27 @@
+{
+  "name": "mui-package",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/index.js",
+    "scripts": {
+      "build": "babel src -d dist"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@babel/cli": "^7.23.0",
+      "@babel/core": "^7.23.2",
+      "@babel/preset-env": "^7.23.2",
+      "@babel/preset-react": "^7.22.15"
+    },
+    "peerDependencies": {
+      "react": "^18.2.0"
+    },
+    "dependencies": {
+      "@emotion/react": "^11.11.1",
+      "@emotion/styled": "^11.11.0",
+      "@mui/icons-material": "^5.14.15",
+      "@mui/material": "^5.14.15",
+      "styled-components": "^6.1.0"
+    }
+  }

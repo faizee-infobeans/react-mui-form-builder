@@ -69,7 +69,6 @@ const MUIForm = ({ data, validate, onFormChange, isFormSubmitted }) => {
           inputHasError ? `${label} must not be empty or invalid.` : ""
         }
       >
-        {/* <FormLabel component="legend">{label}</FormLabel> */}
         <div className="checkbox-group">
           {fieldName.map((field, index) => (
             <FormControlLabel
@@ -116,12 +115,15 @@ const MUIForm = ({ data, validate, onFormChange, isFormSubmitted }) => {
     );
   } else if (fieldType === "select") {
     inputField = (
-      <FormControl sx={{ minWidth: 235 }} error={inputHasError} className="form-control">
+      <FormControl
+        sx={{ minWidth: 235 }}
+        error={inputHasError}
+        className="form-control"
+      >
         <TextField
           size="lg"
           id={fieldName}
           label={label}
-          // select={fieldType === "select" ? true : false}
           select
           onChange={valueChangeHandler}
           onBlur={inputBlurHandler}
@@ -145,7 +147,6 @@ const MUIForm = ({ data, validate, onFormChange, isFormSubmitted }) => {
   } else {
     inputField = (
       <FormControl error={inputHasError} className="form-control">
-        {/* <FormLabel htmlFor={label}>{label}</FormLabel> */}
         {fieldType === "textarea" ? (
           <TextField
             multiline
@@ -175,9 +176,6 @@ const MUIForm = ({ data, validate, onFormChange, isFormSubmitted }) => {
             }
           />
         )}
-        {/* {inputHasError && (
-          <p className="error-text">{label} must not be empty</p>
-        )} */}
       </FormControl>
     );
   }

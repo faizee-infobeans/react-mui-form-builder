@@ -92,9 +92,7 @@ var MUIForm = function MUIForm(_ref) {
     }, /*#__PURE__*/_react["default"].createElement(_material.TextField, {
       size: "lg",
       id: fieldName,
-      label: label
-      // select={fieldType === "select" ? true : false}
-      ,
+      label: label,
       select: true,
       onChange: valueChangeHandler,
       onBlur: inputBlurHandler,

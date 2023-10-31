@@ -53,7 +53,7 @@ const MUIForm = ({ data, validate, onFormChange, isFormSubmitted }) => {
       : fieldName[0],
     isFormSubmitted
   );
-
+  
   const label =
     fieldType === "text" || fieldType === "textarea" ? fieldName[0] : labelName;
 

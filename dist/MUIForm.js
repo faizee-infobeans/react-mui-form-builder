@@ -85,7 +85,8 @@ var MUIForm = function MUIForm(_ref) {
   } else if (fieldType === "select") {
     inputField = /*#__PURE__*/_react["default"].createElement(_material.FormControl, {
       sx: {
-        minWidth: 235
+        minWidth: 235,
+        m: 1
       },
       error: inputHasError,
       className: "form-control"
@@ -111,7 +112,11 @@ var MUIForm = function MUIForm(_ref) {
   } else {
     inputField = /*#__PURE__*/_react["default"].createElement(_material.FormControl, {
       error: inputHasError,
-      className: "form-control"
+      className: "form-control",
+      sx: {
+        minWidth: 235,
+        m: 1
+      }
     }, fieldType === "textarea" ? /*#__PURE__*/_react["default"].createElement(_material.TextField, {
       multiline: true,
       rows: 3,

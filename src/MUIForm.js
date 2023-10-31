@@ -116,7 +116,7 @@ const MUIForm = ({ data, validate, onFormChange, isFormSubmitted }) => {
   } else if (fieldType === "select") {
     inputField = (
       <FormControl
-        sx={{ minWidth: 235 }}
+        sx={{ minWidth: 235, m: 1 }}
         error={inputHasError}
         className="form-control"
       >
@@ -146,7 +146,11 @@ const MUIForm = ({ data, validate, onFormChange, isFormSubmitted }) => {
     );
   } else {
     inputField = (
-      <FormControl error={inputHasError} className="form-control">
+      <FormControl
+        error={inputHasError}
+        className="form-control"
+        sx={{ minWidth: 235, m: 1 }}
+      >
         {fieldType === "textarea" ? (
           <TextField
             multiline
